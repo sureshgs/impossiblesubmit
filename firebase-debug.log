@@ -121,3 +121,49 @@
     "statusCode": 500
   }
 }
+[debug] [2022-10-24T12:36:39.334Z] ----------------------------------------------------------------------
+[debug] [2022-10-24T12:36:39.337Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kalyankickzz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-24T12:36:39.337Z] CLI Version:   11.15.0
+[debug] [2022-10-24T12:36:39.338Z] Platform:      win32
+[debug] [2022-10-24T12:36:39.338Z] Node Version:  v16.17.1
+[debug] [2022-10-24T12:36:39.339Z] Time:          Mon Oct 24 2022 18:06:39 GMT+0530 (India Standard Time)
+[debug] [2022-10-24T12:36:39.339Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-24T12:36:39.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-24T12:36:39.435Z] > authorizing via signed-in user (suresh8194@gmail.com)
+[debug] [2022-10-24T12:36:39.435Z] [iam] checking project impossiblesubmit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-24T12:36:39.437Z] > refreshing access token with scopes: []
+[debug] [2022-10-24T12:36:39.439Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-24T12:36:39.439Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-24T12:36:39.762Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-24T12:36:39.762Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-24T12:36:39.770Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/impossiblesubmit:testIamPermissions [none]
+[debug] [2022-10-24T12:36:39.770Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/impossiblesubmit:testIamPermissions x-goog-quota-user=projects/impossiblesubmit
+[debug] [2022-10-24T12:36:39.771Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/impossiblesubmit:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-24T12:36:41.480Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/impossiblesubmit:testIamPermissions 200
+[debug] [2022-10-24T12:36:41.480Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/impossiblesubmit:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-24T12:36:41.481Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/impossiblesubmit [none]
+[debug] [2022-10-24T12:36:42.201Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/impossiblesubmit 200
+[debug] [2022-10-24T12:36:42.201Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/impossiblesubmit {"projectId":"impossiblesubmit","projectNumber":"341473689849","displayName":"impossiblesubmit","name":"projects/impossiblesubmit","resources":{"hostingSite":"impossiblesubmit"},"state":"ACTIVE","etag":"1_6bb53532-a159-4c6c-8639-960c3235c13e"}
+[info] 
+[info] === Deploying to 'impossiblesubmit'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-10-24T12:36:42.215Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/impossiblesubmit/versions [none]
+[debug] [2022-10-24T12:36:42.215Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/impossiblesubmit/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-24T12:36:43.467Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/impossiblesubmit/versions 500
+[debug] [2022-10-24T12:36:43.467Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/impossiblesubmit/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-10-24T12:36:43.713Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
