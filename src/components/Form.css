@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+ 
+}
+
+.App {
+  text-align: center;
+  height:100vh;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  background: hsla(217, 100%, 50%, 1);
+  background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  
+}
+
+.form-container{
+ 
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#fff;
+  border-radius: 10px;
+  padding: 100px 50px;
+  position: relative;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.form-container .inputclass{
+  margin-bottom: 50px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  width:200px; 
+}
+
+.form-container button{
+  transition: all 0.3s ease;
+  clip-path: circle(40%);
+  padding: 10px;
+  background-color: black;
+  color:white;
+}
+
+
+
+span{
+position: absolute;
+top:200px;
+left:220px;
+color:rgb(209 209 209);;
+background-color:black;
+padding: 1px 10px;
+clip-path:circle(40%);
+font-size: small;
+}
+
+.fa-info-circle{
+  position: absolute;
+  top:30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa-info-circle:hover::after
+{
+  content: "Dare to Submit form with password <  than {8} ";
+  font-size: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  position: relative;
+  top:2px;
+  text-transform: lowercase;
+}
+
